@@ -1,0 +1,18 @@
+mvs_model: "clmvsnet"
+CLMVSNet:
+  num_stage: 3
+  base_channels: 8
+  sample1: 
+    num_hypotheses: 48
+    interval_ratio: 4
+  sample2: 
+    num_hypotheses: 32
+    interval_ratio: 2
+  sample3: 
+    num_hypotheses: 8
+    interval_ratio: 1
+  group: 8
+  ckpt_path: "model_clmvsnet.ckpt"
+
+dataset:
+  path: "DTU_Sparse"
