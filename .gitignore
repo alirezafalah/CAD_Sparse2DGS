@@ -1,0 +1,20 @@
+
+# Python standard ignores
+__pycache__/
+*.pyc
+
+# Build artifacts from our manual compilation
+**/build/
+**/dist/
+**/*.egg-info/
+
+# Jupyter/Colab notebook checkpoints
+.ipynb_checkpoints/
+
+# Downloaded ZIP files
+*.zip
+
+# IMPORTANT: Add your dataset folders here if you have any!
+# For example:
+# dataset/
+# DTU_dataset/
