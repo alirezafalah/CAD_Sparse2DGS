@@ -12,6 +12,12 @@
 import os
 import torch
 from random import randint
+# ============================ YOUR FIX GOES HERE ============================
+import sys
+# Add the two standard installation paths for Python 3.8 packages in Colab
+sys.path.insert(0, '/content/drive/MyDrive/PhD_Projects/cad_detection/CAD_Sparse2DGS/submodules/simple-knn')
+sys.path.insert(0, '/content/drive/MyDrive/PhD_Projects/cad_detection/CAD_Sparse2DGS/submodules/diff-surfel-rasterization')
+# ============================================================================
 from utils.loss_utils import l1_loss, ssim, get_fea_loss, get_disk_reg_loss, get_view_idx
 from gaussian_renderer import render, network_gui
 import sys
